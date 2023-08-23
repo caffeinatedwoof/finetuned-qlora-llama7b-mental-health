@@ -4,10 +4,13 @@
 - Demostration of instruction-tuning on latest open source LLM using a custom dataset on a free colab instance.
 
 ## Model Finetuning
-A sharded Llama-7B pre-trained model was finetuned using the QLoRA technique on the dataset. The entire finetuning process was done entirely on Google Colab's free-tier using Nvidia T4. 
+A Llama-7B pre-trained model was finetuned using the QLoRA technique on the dataset. The entire finetuning process was done entirely on Google Colab's free-tier using Nvidia T4. 
 
 ## Model Inference
-PEFT fine-tuned model has been updated here: [caffeinatedwoof/Llama-2-7B-bf16-sharded-mental-health-conversational](https://huggingface.co/caffeinatedwoof/Llama-2-7B-bf16-sharded-mental-health-conversational).
+PEFT fine-tuned model has been updated here: [caffeinatedwoof/Llama-2-7b-chat-hf-mental-health-conversational_peft](https://huggingface.co/caffeinatedwoof/Llama-2-7b-chat-hf-mental-health-conversational_peft).
+
+| Hugging Face Model | Base Model | Dataset | Colab
+| [llama2-7b-v1](https://huggingface.co/caffeinatedwoof/Llama-2-7b-chat-hf-mental-health-conversational_peft) | [meta-llama/Llama-2-7b-chat-hf](https://huggingface.co/meta-llama/Llama-2-7b-chat-hf) | [heliosbrahma/mental_health_conversational_dataset](https://huggingface.co/datasets/heliosbrahma/mental_health_conversational_dataset) | | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/145yWAi1GLuuihYfjEn7mCUYgkcHI4qrb?usp=sharing)
 
 ## References
 
