@@ -71,8 +71,17 @@ cd ./llama_lambda
 chmod +x install.sh
 ./install.sh
 ```
-Follow the prompts, and when complete, the CDK will provide you with a Lambda Function URL to test the function
+Follow the prompts, and when complete, the CDK will provide you with a Lambda Function URL to test the function. 
 
+You should see a interface like this:
+
+<p align="center">
+  <img src="assets/openllama_lambda_api.png" alt="AWS Lambda CDK Interface" width="1000">
+</p>
+
+Note that the model will take a longer time to respond initially. This is because when a request hits a Lambda function that has just been deployed, AWS needs to allocate the necessary resources for it. This process involves setting up a new container, loading the runtime, and then the function code. Since our function involves loading a large model, it will further add to the cold start time.
+
+However, after a function has been invoked, AWS keeps the execution context (i.e., the container) "warm" for some time in anticipation of another request. If another request comes in while the context is still warm, AWS reuses it, avoiding the initialization overhead and thereby providing faster response times. Hence, for subsequent calls, the model should provide a response significantly faster.
 
 ## References
 
