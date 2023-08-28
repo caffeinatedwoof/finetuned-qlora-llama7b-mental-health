@@ -37,7 +37,10 @@ async def prompt(
             seedval = random.randint(0, 65535)
         llm = Llama(model_path=MODELPATH, seed=seedval)
         output = llm(
-            "Below is an instruction that describes a task, as well as any previous text you have generated. You must continue where you left off if there is text following Previous Output. Write a response that appropriately completes the request. When you are finished, write [[COMPLETE]].\n\n Instruction: "
+            "You are a therapist. Below is a description of a person's difficulties, \
+                as well as any previous text you have generated. \
+                    You must continue where you left off if there is text following Previous Output. \
+                        Provide a helpful response to the person who is describing their difficulties to you. When you are finished, write [[COMPLETE]].\n\n Instruction: "
             + text
             + " Previous output: "
             + prioroutput

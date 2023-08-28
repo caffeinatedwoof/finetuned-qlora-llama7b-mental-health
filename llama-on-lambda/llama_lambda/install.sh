@@ -14,4 +14,11 @@ echo "Downloading $MODELURL"
 
 wget -O ./llama_cpp_docker/modelfile.bin "$MODELURL"
 
-cdk deploy
+echo -n "Enter the profile name you wish to use with cdk deploy (or just press Enter to use the default profile): "
+read profile_name
+
+if [ -z "$profile_name" ]; then
+    cdk deploy
+else
+    cdk deploy --profile $profile_name
+fi
