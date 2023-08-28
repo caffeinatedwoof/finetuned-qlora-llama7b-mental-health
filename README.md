@@ -12,7 +12,7 @@ To tackle this issue, I wanted to create a Proof of Concept (POC) using the <a h
 ### Objectives ###
 
 #### 1. Streamlined Finetuning: ####
-Use QLoRA to perform PEFT on Llama-7B model. This significantly reduces memory usage enables LLM training on a single GPU, offering a more economical alternative.
+Use QLoRA to perform PEFT on Llama-7B model. This significantly reduces memory usage to enable LLM training on a single GPU, offering a more economical alternative.
 I demonstrate the instruction-tuning using a custom dataset on a free colab instance.
 
 #### 2. CPU-centric Deployment: ####
