@@ -66,9 +66,7 @@ We will need the following requirements to get started:
 
 Once we've installed the requirements, on Mac/Linux:
 
-Download this repository.
 ```bash
-cd into the root directory of this repo (/wherever/you/downloaded/it/llama-on-lambda)
 cd ./llama_lambda
 chmod +x install.sh
 ./install.sh
