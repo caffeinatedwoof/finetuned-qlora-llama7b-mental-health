@@ -1,6 +1,5 @@
 # modified from https://gist.github.com/TheBloke/b9423b7ffd512724115c3cd85edcfa07
 # usage: python make_ggml.py /path/to/HF_model model-name /path/to/output_directory
-# example usage: python ./scripts/make_ggml.py ../llama.cpp models/cria-llama2-7b-v1.3 cria-llama2-7b-v1.3 models/
 # example usage: python ./src/make_ggml.py ../llama.cpp models/llama-2-7b-chat-hf-amod-mental_health_counseling_conversations llama-2-7b-chat-hf-amod-mental_health_counseling_conversations models/
 #!/usr/bin/env python3
 import argparse
